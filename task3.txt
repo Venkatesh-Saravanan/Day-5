@@ -1,0 +1,70 @@
+The difference between Document and Window object
+
+The document and window object are the object whose interfaces you generally use most often in DOM 
+programming. In simple terms, the window object represents like the browser and the document object is the
+root of the document itself. Elememt inherits from the generic node interface and together these two 
+interfaces provide many of the methods and properties use on individual element.
+
+Window objects:
+The window object is a global object i client side javascript, representing the browser window containing a
+DOM document andd acting as the root of the document object model. The window object supporting by all browser
+and represent the browser's window and automatically includes global javascript objects, functions and 
+variables as member. The window object is responsible for managing the global variables, functions and objects
+providing methods for browser interaction and managing properties related to frames, tabs, windows such as 
+alert(), confirm(), setTimeout() and setInterval().
+
+Few Properties of Window objects are,
+
+window.innerHeight - the inner height of the browser window(in pixels)
+window.innerWidth - the inner width of the browser window(in pixels)
+
+Few Methhodds of Window objects are,
+
+window.open() - open a new window
+window.close() - close the current window
+window.moveTo() - move the current window
+window.resizeTo() - resize the current window
+
+Screen object:
+The screen object provides information about the user's screen or monitor. It is a global object that is 
+accessible via the window.screen property. The screen object offers properties that allow developers to 
+retrieve various details about the screen's dimensions, color capabilities, and orientation. The values 
+are generally reliable across modern browsers. It provide information about the display's color capabilities 
+and are useful for determining optimal image rendering and color usage. 
+
+Few Properties of Screen objects are,
+
+screen.width - width of a user's screen
+screen.height - height of a user's screen
+screen.availWidth - available width of a user's screen
+screen.availHeight - available height of a user's screen
+screen.colorDepth - color resolution of the user's screen
+
+Document objects:
+The document object is the HTML document that appears in the browser window and serves as an interface
+for interacting with the web pages content.The browser generates a document object model of a web page 
+upon loading it.
+
+The DOM manipulating tool offer methods to access and manipulate the structure and content of a document
+such  as getElementById(),querySelector(), createElement() and innerHTML. It represents the entire HTML
+document as a node tree, with the document object as the root node. It allow dynamic updates and interactions
+with the web page content.
+
+Few Properties of Document objects are,
+
+element.innerHTML - new HTML content or change the inner html of a element
+element.attributes - new value or change the attributes value of an element
+
+Few Methods of Document object are,
+
+document.createElement(element) - create a HTML document
+ddocument.removeChild(element) - remove a HTML document
+
+In conclusion of the difference between windows, screens and documents object are related and accessible
+through the window object, each serves a distinct purpose in client-side JavaScript development, focusing 
+on different aspects of the browser environment, screen properties, and HTML document manipulation.
+Using these functionalities allows developers to create interactives web experiences.
+
+
+
+
